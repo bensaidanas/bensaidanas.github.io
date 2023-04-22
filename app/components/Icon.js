@@ -2,11 +2,9 @@
 
 import * as React from "react";
 
-interface IconProps {
-    className: string;
-}
 
-export const SunIcon: React.FC<IconProps> = ({ className, ...rest }) => (
+
+export const SunIcon = ({ className, ...rest }) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -184,7 +182,7 @@ export const SunIcon: React.FC<IconProps> = ({ className, ...rest }) => (
     </svg>
   );
   
-  export const MoonIcon: React.FC<IconProps> = ({ className, ...rest }) => (
+  export const MoonIcon = ({ className, ...rest }) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
