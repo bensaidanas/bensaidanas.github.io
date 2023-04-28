@@ -7,6 +7,7 @@ import AnimatedText from './components/AnimatedText'
 import About from './sections/About'
 import Skills from './sections/Skills'
 import Experience from './sections/Experience'
+import Education from './sections/Education'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -40,6 +41,7 @@ export default function Home() {
       <About />
       <Skills />
       <Experience />
+      <Education />
     </>
   )
 }
