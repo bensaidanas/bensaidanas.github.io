@@ -10,7 +10,7 @@ const Projects = () => {
     return (
         <Container>
             <section className="w-full min-h-screen">
-                <AnimatedText text="Projects" className="mb-16" />
+                <AnimatedText text="Projects" className="" />
                 <div className="flex md:h-[60vh]  w-full items-center justify-center relative">
                     <div className="flex p-2 md:p-0 flex-col text-center md:text-start w-full items-center md:items-start justify-center z-10 gap-1 md:gap-4">
                         <div>

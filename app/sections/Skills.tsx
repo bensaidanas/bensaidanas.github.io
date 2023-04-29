@@ -7,7 +7,7 @@ const Skills = () => {
     return (
         <Container>
             <section className="w-full min-h-screen mb-12">
-                <AnimatedText text="Skills" className="mb-4" />
+                <AnimatedText text="Skills" className="" />
                 <div className="flex items-center justify-center text-xs">
                     <div className="grid grid-cols-4 md:grid-cols-8 gap-4 md:gap-12">
                         <h1 className="inline-block col-span-4 md:col-span-8 w-full  text-dark dark:text-light font-bold capitalize text-3xl">

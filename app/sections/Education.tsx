@@ -43,7 +43,7 @@ const Education = () => {
     return (
         <Container>
             <section className="w-full min-h-screen">
-                <AnimatedText text="Education" className="mb-16" />
+                <AnimatedText text="Education" className="" />
                 <div ref={ref} className="w-[75%] mx-auto relative">
                     <motion.div
                         style={{scaleY: scrollYProgress}}
