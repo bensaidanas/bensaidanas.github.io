@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../components/Container'
 import AnimatedText from '../components/AnimatedText'
-import { Anaconda, AndroidStudio, Angular, Bootstrap, CSS, CSharp, Canva, Docker, DotNet, Figma, Flask, Git, GitHub, HTML, Ionic, Java, JavaScript, MongoDB, MySQL, NextJs, NodeJs, Python, ReactLogo, RedHat, SQLServer, Sass, Spring, TailWindCSS, TypeScript, VSCode, VisualStudio } from '../components/Logos'
+import { Anaconda, AndroidStudio, Angular, Bootstrap, CSS, CSharp, Canva, Docker, DotNet, Figma, Flask, GPT, Git, GitHub, HTML, Ionic, Java, JavaScript, MongoDB, MySQL, NextJs, NodeJs, Python, ReactLogo, RedHat, SQLServer, Spring, TailWindCSS, TypeScript, VSCode, VisualStudio } from '../components/Logos'
 
 const Skills = () => {
     return (
@@ -86,6 +86,7 @@ const Skills = () => {
                             <TailWindCSS />
                             <p>TailWindCSS</p>
                         </div>
+                        
                         <div className="flex flex-col items-center justify-center">
                             <Angular />
                             <p>Angular 13</p>
@@ -144,6 +145,10 @@ const Skills = () => {
                         <div className="flex flex-col items-center justify-center">
                             <Anaconda />
                             <p>Anaconda</p>
+                        </div>
+                        <div className="flex flex-col items-center justify-center">
+                            <GPT />
+                            <p>GPT-3.5</p>
                         </div>
                     </div>
                 </div>
