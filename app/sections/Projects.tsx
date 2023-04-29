@@ -12,17 +12,17 @@ const Projects = () => {
             <section className="w-full min-h-screen">
                 <AnimatedText text="Projects" className="" />
                 <div className="flex md:h-[60vh]  w-full items-center justify-center relative">
-                    <div className="flex p-2 md:p-0 flex-col text-center md:text-start w-full items-center md:items-start justify-center z-10 gap-1 md:gap-4">
+                    <div className="flex p-1 md:p-0 flex-col text-center md:text-start w-full items-center md:items-start justify-center z-10 gap-1 md:gap-4">
                         <div>
-                            <h3 className="m-0 text-sm text-primary dark:text-primaryDark">Featured Project</h3>
-                            <h2 className="m-0 text-2xl font-bold">RecipesHub</h2>
+                            <h3 className="m-0  text-xs md:text-sm text-primary dark:text-primaryDark">Featured Project</h3>
+                            <h2 className="m-0 text-xl md:text-2xl font-bold">RecipesHub</h2>
                         </div>
-                        <div className="w-full md:max-w-[40vw] p-3 rounded-lg md:dark:bg-black md:bg-slate-500">
-                            <p className="">
+                        <div className="w-full md:max-w-[40vw] md:p-3 rounded-lg md:dark:bg-black md:bg-slate-500">
+                            <p className="text-xs md:text-lg">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus repudiandae ex eveniet quisquam veniam dolorem quaerat a aliquam doloremque error sapiente, vero, quo, ea cupiditate! Reiciendis non placeat a voluptates!
                             </p>
                         </div>
-                        <div className="flex flex-wrap items-center justify-center gap-3 opacity-70">
+                        <div className="flex flex-wrap text-xs md:text-lg items-center justify-center gap-2 md:gap-3 opacity-70">
                             <p>Ionic 6</p>
                             <p>Angular 13</p>
                             <p>Node.js</p>
@@ -44,15 +44,15 @@ const Projects = () => {
                 <div className="flex md:h-[60vh]  w-full items-center justify-center relative">
                 <div className="flex p-2 md:p-0 flex-col text-center md:text-end w-full items-center md:items-end justify-center z-10 gap-1 md:gap-4">
                         <div>
-                            <h3 className="m-0 text-sm text-primary dark:text-primaryDark">Featured Project</h3>
-                            <h2 className="m-0 text-2xl font-bold">RecipesHub</h2>
+                            <h3 className="m-0 text-xs md:text-sm text-primary dark:text-primaryDark">Featured Project</h3>
+                            <h2 className="m-0 text-xl md:text-2xl font-bold">RecipesHub</h2>
                         </div>
-                        <div className="w-full md:max-w-[40vw] p-3 rounded-lg md:dark:bg-black md:bg-slate-500">
-                            <p className="">
+                        <div className="w-full md:max-w-[40vw] md:p-3 rounded-lg md:dark:bg-black md:bg-slate-500">
+                            <p className="text-xs md:text-lg">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus repudiandae ex eveniet quisquam veniam dolorem quaerat a aliquam doloremque error sapiente, vero, quo, ea cupiditate! Reiciendis non placeat a voluptates!
                             </p>
                         </div>
-                        <div className="flex flex-wrap items-center justify-center gap-3 opacity-70">
+                        <div className="flex flex-wrap items-center justify-center text-xs md:text-lg gap-2 md:gap-3 opacity-70">
                             <p>Ionic 6</p>
                             <p>Angular 13</p>
                             <p>Node.js</p>
@@ -72,17 +72,17 @@ const Projects = () => {
                 <div className="my-12" />
 
                 <div className="flex md:h-[60vh]  w-full items-center justify-center relative">
-                    <div className="flex p-2 md:p-0 flex-col text-center md:text-start w-full items-center md:items-start justify-center z-10 gap-1 md:gap-4">
+                    <div className="flex p-1 md:p-0 flex-col text-center md:text-start w-full items-center md:items-start justify-center z-10 gap-1 md:gap-4">
                         <div>
-                            <h3 className="m-0 text-sm text-primary dark:text-primaryDark">Featured Project</h3>
-                            <h2 className="m-0 text-2xl font-bold">RecipesHub</h2>
+                            <h3 className="m-0  text-xs md:text-sm text-primary dark:text-primaryDark">Featured Project</h3>
+                            <h2 className="m-0 text-xl md:text-2xl font-bold">RecipesHub</h2>
                         </div>
-                        <div className="w-full md:max-w-[40vw] p-3 rounded-lg md:dark:bg-black md:bg-slate-500">
-                            <p className="">
+                        <div className="w-full md:max-w-[40vw] md:p-3 rounded-lg md:dark:bg-black md:bg-slate-500">
+                            <p className="text-xs md:text-lg">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus repudiandae ex eveniet quisquam veniam dolorem quaerat a aliquam doloremque error sapiente, vero, quo, ea cupiditate! Reiciendis non placeat a voluptates!
                             </p>
                         </div>
-                        <div className="flex flex-wrap items-center justify-center gap-3 opacity-70">
+                        <div className="flex flex-wrap text-xs md:text-lg items-center justify-center gap-2 md:gap-3 opacity-70">
                             <p>Ionic 6</p>
                             <p>Angular 13</p>
                             <p>Node.js</p>

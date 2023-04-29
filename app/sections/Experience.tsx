@@ -19,16 +19,16 @@ const Details: React.FC<DetailsProps> = ({position, company, companyLink, time, 
     const ref = useRef(null);
     
     return (
-        <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between">
+        <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[80%] md:w-[60%] mx-auto flex flex-col items-center justify-between">
             <LiIcon reference={ref} />
             <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration: 0.5, type: "spring"}}>
-                <h3 className="capitalize font-bold text-2xl">
+                <h3 className="capitalize font-bold text-lg md:text-2xl">
                     {position} &nbsp; <a href={companyLink} className="text-primary capitalize" target="_blank">@ {company}</a>
                 </h3>
-                <span className="capitalize font-medium text-dark/75 dark:text-light/75">
+                <span className="capitalize text-xs font-medium text-dark/75 dark:text-light/75">
                     {time} | {address}
                 </span>
-                <p className='font-medium w-full'>
+                <p className='font-medium text-sm md:text-lg w-full'>
                     {work}
                 </p>
             </motion.div>
@@ -47,11 +47,11 @@ const Experience = () => {
         <Container>
             <section className="w-full min-h-screen">
                 <AnimatedText text="Experience" className="" />
-                <div ref={ref} className="w-[75%] mx-auto relative">
+                <div ref={ref} className=" md:mx-auto relative w-full xl:w-[75%]">
                 <motion.div
                     style={{scaleY: scrollYProgress}}
-                    className="absolute left-9 top-1 w-[4px] h-full bg-dark dark:bg-light origin-top" />
-                <ul className="w-full flex flex-col items-start justify-between ml-4">
+                    className="absolute left-[20px]  md:left-[30px] lg:left-9 top-1 w-[2px] lg:w-[4px] h-full bg-dark dark:bg-light origin-top" />
+                <ul className="w-full flex flex-col items-start justify-between md:ml-4 ml-2">
                     <Details 
                         position="Software Engineer"
                         company="Google"

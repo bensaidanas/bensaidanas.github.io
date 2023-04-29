@@ -7,9 +7,9 @@ const Contact = () => {
     return (
         <Container>
             <section className="w-full min-h-[80vh]">
-                    <div className="flex flex-col items-center justify-center gap-11">
+                    <div className="flex flex-col items-center justify-center gap-8 md:gap-11">
                         <AnimatedText text="Get In Touch" className="" />
-                        <p className="w-[80%] md:w-[40%] text-center">
+                        <p className="w-[90%] md:w-[40%] text-center">
                             Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
                         </p>
                         <Link  target={"_blank"} href="mailto:bensaidanas0@gmail.com"
