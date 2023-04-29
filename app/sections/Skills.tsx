@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../components/Container'
 import AnimatedText from '../components/AnimatedText'
-import { Anaconda, AndroidStudio, Angular, Bootstrap, CSS, CSharp, Canva, Docker, DotNet, Figma, Flask, Git, GitHub, HTML, Ionic, Java, JavaScript, MongoDB, MySQL, NextJs, NodeJs, Python, ReactLogo, RedHat, SQLServer, Spring, TailWindCSS, TypeScript, VSCode, VisualStudio } from '../components/Logos'
+import { Anaconda, AndroidStudio, Angular, Bootstrap, CSS, CSharp, Canva, Docker, DotNet, Figma, Flask, Git, GitHub, HTML, Ionic, Java, JavaScript, MongoDB, MySQL, NextJs, NodeJs, Python, ReactLogo, RedHat, SQLServer, Sass, Spring, TailWindCSS, TypeScript, VSCode, VisualStudio } from '../components/Logos'
 
 const Skills = () => {
     return (
@@ -13,10 +13,6 @@ const Skills = () => {
                         <h1 className="inline-block col-span-4 md:col-span-8 w-full  text-dark dark:text-light font-bold capitalize text-3xl">
                             Languages
                         </h1>
-                        <div className="flex flex-col items-center justify-center">
-                            <CSharp />
-                            <p>C#</p>
-                        </div>
                         <div className="flex flex-col items-center justify-center">
                             <HTML />
                             <p>HTML 5</p>
@@ -30,12 +26,20 @@ const Skills = () => {
                             <p>JavaScript</p>
                         </div>
                         <div className="flex flex-col items-center justify-center">
+                            <TypeScript />
+                            <p>TypeScript</p>
+                        </div>
+                        <div className="flex flex-col items-center justify-center">
                             <Java />
                             <p>Java</p>
                         </div>
                         <div className="flex flex-col items-center justify-center">
                             <Python />
                             <p>Python 3</p>
+                        </div>
+                        <div className="flex flex-col items-center justify-center">
+                            <CSharp />
+                            <p>C#</p>
                         </div>
                         <div className="flex flex-col items-center justify-center">
                             <MySQL />
@@ -49,32 +53,38 @@ const Skills = () => {
                             <MongoDB />
                             <p>MongoDB</p>
                         </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <TypeScript />
-                            <p>TypeScript</p>
-                        </div>
+                        
                         <h1 className="inline-block col-span-4 md:col-span-8 w-full  text-dark dark:text-light font-bold capitalize text-3xl">
                             Frameworks & Libraries:
                         </h1>
                         <div className="flex flex-col items-center justify-center">
-                            <Bootstrap />
-                            <p>Bootstrap</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
                             <NextJs className="dark:fill-white fill-black" />
                             <p>Next.js 13</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <TailWindCSS />
-                            <p>TailWindCSS</p>
                         </div>
                         <div className="flex flex-col items-center justify-center">
                             <DotNet />
                             <p>.Net Core</p>
                         </div>
                         <div className="flex flex-col items-center justify-center">
+                            <NodeJs />
+                            <p>Node JS</p>
+                        </div>
+                        <div className="flex flex-col items-center justify-center">
                             <Spring />
                             <p>Spring</p>
+                        </div>
+                        
+                        {/* <div className="flex flex-col items-center justify-center">
+                            <Sass />
+                            <p>Sass</p>
+                        </div> */}
+                        <div className="flex flex-col items-center justify-center">
+                            <Bootstrap />
+                            <p>Bootstrap 5</p>
+                        </div>
+                        <div className="flex flex-col items-center justify-center">
+                            <TailWindCSS />
+                            <p>TailWindCSS</p>
                         </div>
                         <div className="flex flex-col items-center justify-center">
                             <Angular />
@@ -83,10 +93,6 @@ const Skills = () => {
                         <div className="flex flex-col items-center justify-center">
                             <ReactLogo />
                             <p>React 6</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <NodeJs />
-                            <p>Node JS</p>
                         </div>
                         <div className="flex flex-col items-center justify-center">
                             <Ionic />

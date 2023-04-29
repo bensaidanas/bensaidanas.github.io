@@ -8,6 +8,7 @@ import About from './sections/About'
 import Skills from './sections/Skills'
 import Experience from './sections/Experience'
 import Education from './sections/Education'
+import Projects from './sections/Projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -42,6 +43,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Education />
+      <Projects />
     </>
   )
 }
