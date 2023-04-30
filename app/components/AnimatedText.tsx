@@ -37,6 +37,7 @@ interface AnimatedTextProps {
 }
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({text, className=""}) => {
+    const words = text.split(" ");
     return (
         <div className='w-full mx-auto pb-4 pt-16 flex items-center justify-center text-center overflow-hidden'>
             <motion.h1 
@@ -44,15 +45,16 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({text, className=""}) => {
                 variants={quote}
                 initial="initial"
                 animate="animate">
-                {
-                    text.split(" ").map((word, index) => 
-                    <motion.span key={word + '-' + index} className="inline-block"
-                        variants={singleWord}
-                        >
-                            {word}&nbsp;
-                    </motion.span>
-                    )
-                }
+                {words.map((word, index) => 
+                    <React.Fragment key={word + '-' + index}>
+                        <motion.span className="inline-block"
+                            variants={singleWord}
+                            >
+                                {word}
+                        </motion.span>
+                        {index < words.length - 1 && <>&nbsp;</>}
+                    </React.Fragment>
+                )}
             </motion.h1>
         </div>
     )

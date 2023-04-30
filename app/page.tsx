@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <main className="w-full min-h-[100vh - 96px] flex items-center">
         <Container>
-          <div className="flex flex-col  md:flex-row  items-center  w-full">
+          <div className="flex flex-col  md:flex-row mt-[4rem] items-center  w-full">
             <div className="md:w-1/2 order-2 md:order-1">
               {/* <h1 className="text-[62px] leading-[65px] font-bold">Turning Vision Into Reality With Code And Design.</h1> */}
               <AnimatedText text="Turning Vision Into Reality With Code And Design" className='!text-5xl !text-center md:!text-left'/>
