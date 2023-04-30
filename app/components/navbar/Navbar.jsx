@@ -16,6 +16,43 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [activeLink, setActiveLink] = useState("home");
     const linksRef = useRef([]);
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+
+    // const [scrolled, setScrolled] = useState(false);
+
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //     const isScrolled = window.scrollY > 0;
+    //     if (isScrolled !== scrolled) {
+    //         setScrolled(isScrolled);
+    //     }
+    //     };
+
+    //     document.addEventListener('scroll', handleScroll);
+    //     return () => {
+    //     document.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, [scrolled]);
+
+    
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+            console.log(currentScrollPos)
+            setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+            console.log(visible)
+            setPrevScrollPos(currentScrollPos);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [prevScrollPos, visible]);
+
+    
 
     useEffect(() => {
         const handleScroll = () => {
@@ -24,6 +61,8 @@ const Navbar = () => {
             const experienceSection = document.getElementById('experience');
             const educationSection = document.getElementById('education');
             const projectsSection = document.getElementById('projects');
+            
+            
 
             if (window.scrollY < aboutSection.offsetTop) {
                 setActiveLink('');  
@@ -55,7 +94,7 @@ const Navbar = () => {
     
 
     return (
-        <div className='w-full bg-light py-1 dark:bg-dark z-40 fixed'>
+        <div className={`w-full z-10 transition-all duration-300 ease-out fixed p-1 bg-light dark:bg-dark ${visible ? 'top-0' : '-top-20'}`}>
             <div className="">
                 <Container>
                     <div className='flex items-center justify-between  md:gap-0'>
@@ -109,11 +148,11 @@ const Navbar = () => {
                                 Skills
                                 <span className={`h-[1px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${activeLink === 'skills' ? "w-full" : "w-0"}`}>&nbsp;</span>
                             </Link>
-                            <Link  href="#experience" className={`${ activeLink === 'experience' ? '' : '' }  text-lg relative group`}>
+                            <Link  href="#experience" className={`${ activeLink === 'experience' ? '' : '' } hidden lg:block  text-lg relative group`}>
                                 Experience
                                 <span className={`h-[1px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${activeLink === 'experience' ? "w-full" : "w-0"}`}>&nbsp;</span>
                             </Link>
-                            <Link  href="#education" className={`${ activeLink === 'education' ? '' : '' }  text-lg relative group`}>
+                            <Link  href="#education" className={`${ activeLink === 'education' ? '' : '' } hidden lg:block text-lg relative group`}>
                                 Education
                                 <span className={`h-[1px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${activeLink === 'education' ? "w-full" : "w-0"}`}>&nbsp;</span>
                             </Link>
