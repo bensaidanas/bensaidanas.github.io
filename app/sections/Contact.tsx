@@ -6,7 +6,7 @@ import Container from "../components/Container"
 const Contact = () => {
     return (
         <Container>
-            <section className="w-full min-h-[80vh]">
+            <section id="contact" className="w-full min-h-[80vh]">
                     <div className="flex flex-col items-center justify-center gap-8 md:gap-11">
                         <AnimatedText text="Get In Touch" className="" />
                         <p className="w-[90%] md:w-[40%] text-center">

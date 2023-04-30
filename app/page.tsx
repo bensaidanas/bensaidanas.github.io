@@ -35,7 +35,7 @@ export default function Home() {
                   </Link>
               </div>
             </div>
-            <div className="md:w-1/2 flex order-1 md:order-2 justify-end">
+            <div className="md:w-1/2 hidden md:flex order-1 md:order-2 justify-end">
               <Image src={homePic} alt="Irelia" className="w-auto max-h-[85vh]" />
             </div>
           </div>

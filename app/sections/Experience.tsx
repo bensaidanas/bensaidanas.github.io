@@ -45,7 +45,7 @@ const Experience = () => {
 
     return (
         <Container>
-            <section className="w-full min-h-screen">
+            <section id="experience" className="w-full min-h-screen">
                 <AnimatedText text="Experience" className="" />
                 <div ref={ref} className=" md:mx-auto relative w-full xl:w-[75%]">
                 <motion.div

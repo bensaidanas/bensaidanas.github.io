@@ -42,7 +42,7 @@ const Education = () => {
 
     return (
         <Container>
-            <section className="w-full min-h-screen">
+            <section id="education" className="w-full min-h-screen">
                 <AnimatedText text="Education" className="" />
                 <div ref={ref} className="md:mx-auto relative w-full xl:w-[75%]">
                     <motion.div

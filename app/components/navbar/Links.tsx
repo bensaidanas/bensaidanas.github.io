@@ -25,8 +25,8 @@ const Links = () => {
     return (
         <nav className='hidden md:flex justify-between items-center gap-[30px]'>
             <CustomLink href="/" title="Home" className='' />
-            <CustomLink href="/about" title="About" className='' />
-            <CustomLink href="/project" title="Projects" className='' />
+            <CustomLink href="#about" title="About" className='' />
+            <CustomLink href="#project" title="Projects" className='' />
         </nav>
     )
 }

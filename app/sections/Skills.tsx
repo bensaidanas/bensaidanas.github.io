@@ -6,7 +6,7 @@ import { Anaconda, AndroidStudio, Angular, Bootstrap, CSS, CSharp, Canva, Docker
 const Skills = () => {
     return (
         <Container>
-            <section className="w-full min-h-screen mb-12">
+            <section id="skills" className="w-full min-h-screen mb-12">
                 <AnimatedText text="Skills" className="" />
                 <div className="flex items-center justify-center text-xs">
                     <div className="grid grid-cols-4 md:grid-cols-8 gap-4 md:gap-12">
@@ -78,7 +78,7 @@ const Skills = () => {
                             <Sass />
                             <p>Sass</p>
                         </div> */}
-                        
+
                         <div className="flex flex-col items-center justify-center">
                             <Bootstrap />
                             <p>Bootstrap 5</p>

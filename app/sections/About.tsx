@@ -7,7 +7,7 @@ import profilePic from '../../public/anas.jpg'
 const About = () => {
     return (
         <Container>
-            <section className="w-full min-h-screen py-1">
+            <section id="about" className="w-full min-h-screen py-1">
                 <AnimatedText text="Passion Fuels Purpose!" className="" />
                 <div className="flex flex-col items-center md:items-start py-12 md:flex-row md:px-12 gap-4 md:gap-12">
                     <div className="md:w-1/4  w-[75%] order-2 md:order-1 relative">
