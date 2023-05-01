@@ -41,7 +41,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({text, className=""}) => {
     return (
         <div className='w-full mx-auto pb-4 pt-2 flex items-center justify-center text-center overflow-hidden'>
             <motion.h1 
-                className={`inline-block w-full text-dark dark:text-light font-bold capitalize text-6xl md:text-8xl ${className}`}
+                className={`inline-block w-full text-dark pt-0 text-center  dark:text-light font-bold capitalize text-4xl lg:text-6xl ${className}`}
                 variants={quote}
                 initial="initial"
                 animate="animate">
