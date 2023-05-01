@@ -16,7 +16,18 @@ const About = () => {
                     </div>
                     <div className="md:w-2/4  order-1 md:order-2">
                         <h2 className="text-3xl text-center md:text-start hidden md:block font-bold">About</h2>
-                        <p className='my-6 text-base text-center md:text-left font-medium'>As a skilled full-stack developer, I’m dedicated to turning ideas into innovative web applications, Explore my latest projects and articles, showcasing my experience in Next Js and web development.</p>
+                        <p className='my-6 text-base text-center md:text-left font-medium'>
+                            Hello! my name is Anas, as a fourth-year software engineering student at ISMAGI in Rabat, 
+                            I am passionate about developing innovative applications that bring value to users. 
+                            With experience in both front-end and back-end development, 
+                            I am capable of building full-stack applications from scratch with a focus on 
+                            providing the best user experience possible.
+                        </p>
+                        <p className='my-6 text-base text-center md:text-left font-medium'>
+                            Moving forward, my goal is to work on complex applications with expert teams that will 
+                            help me take my skills to the next level. I am dedicated to delivering the best possible 
+                            apps to my clients and users, and I am excited about the opportunities that lie ahead.
+                        </p>
                     </div>
                 </div>
             </section>

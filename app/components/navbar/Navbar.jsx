@@ -94,7 +94,7 @@ const Navbar = () => {
     
 
     return (
-        <div className={`w-full z-10 transition-all duration-300 ease-out fixed p-1 bg-light dark:bg-dark ${visible ? 'top-0' : '-top-20'}`}>
+        <div className={`w-full z-20 transition-all duration-300 ease-out fixed py-1 bg-light dark:bg-dark ${visible ? 'top-0' : '-top-20'}`}>
             <div className="">
                 <Container>
                     <div className='flex items-center justify-between  md:gap-0'>

@@ -11,9 +11,10 @@ interface DetailsProps {
     time: string;
     place: string;
     info: string;
+    details?: string
 }
 
-const Details: React.FC<DetailsProps> = ({type, time, place, info}) => {
+const Details: React.FC<DetailsProps> = ({type, time, place, info, details}) => {
     const ref = useRef(null);
     return (
         <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[80%] md:w-[60%] mx-auto flex flex-col items-center justify-between">
@@ -27,6 +28,9 @@ const Details: React.FC<DetailsProps> = ({type, time, place, info}) => {
                 </span>
                 <p className='font-medium text-sm md:text-lg w-full'>
                     {info}
+                </p>
+                <p className='font-medium pt-4 text-sm md:text-lg w-full'>
+                    {details}
                 </p>
             </motion.div>
         </li>
@@ -50,18 +54,36 @@ const Education = () => {
                         className="absolute left-[20px]  md:left-[30px] lg:left-9 top-1 w-[2px] lg:w-[4px] h-full bg-dark dark:bg-light origin-top" />
                         <ul className="w-full flex flex-col items-start justify-between md:ml-4 ml-2">
                             <Details 
-                                type="Bachelor of Science In Computer Science"
-                                time="2016-2020"
-                                place="Massachusetts Institue Of Technology (MIT)"
-                                info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                                Intelligence."
+                                type="Software Engineer Degree"
+                                time="October 2021 - 2024"
+                                place="Riad Al Andalos, Hay Riad Rabat, Morocco"
+                                info="I am currently enrolled in the engineering program at ISMAGI. During my first 
+                                year (CI 1), I gained knowledge in several programming languages including Java, C#, 
+                                PHP, Python, and familiarized myself with MySQL and SQL Server, ASP .net, OPP, MVC 
+                                pattern, and Cryptography. In my second year (CI 2), I learned about IONIC 6, Angular 13, 
+                                BI, Math Machine Learning, Data Analysis, DevOps, Cloud Computing, and Virtualization, 
+                                as well as R language, NLP, and Java Android. Although I still have one more year to 
+                                graduate and become a software engineer, I have acquired a strong foundation in programming, 
+                                software development, and technology that will help me excel in the industry."
                             />
                             <Details 
-                                type="Bachelor of Science In Computer Science"
-                                time="2016-2020"
-                                place="Massachusetts Institue Of Technology (MIT)"
-                                info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                                Intelligence."
+                                type="Specialized Technician in computer networking"
+                                time="Novemenber 2018 - October 2020"
+                                place="OFPPT, Hay Riad Rabat, Morocco"
+                                info="
+                                During my two-year program at the OFPPT school, I majored in Networking Technician and 
+                                acquired a solid educational background in networking technology. The program covered 
+                                computer components, and I obtained valuable skills in networking technology by 
+                                studying for CompTIA A+ and Network+ certifications. I also learned about CCNA, 
+                                CCNA security, and cryptography algorithms, as well as programming languages such as 
+                                C++, Python, HTML, and CSS, and SGBD. These studies gave me a well-rounded 
+                                understanding of software development and how it integrates with networking technology."
+                                details="Additionally, I completed coursework on Windows Server 2019, 
+                                which included learning how to configure an Active Directory, DNS, DHCP, VPN, Apache 
+                                Server, SSH, and other related technologies. Although I did not learn about installing 
+                                a Hadoop server in this program, I gained practical experience with this technology by 
+                                installing one with different nodes for my graduation project, which further expanded 
+                                my knowledge and skills in networking technology."
                             />
                         </ul>
                 </div>
