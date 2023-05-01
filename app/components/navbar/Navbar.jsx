@@ -15,34 +15,15 @@ const Navbar = () => {
     const [mode, setMode] = useThemeSwitcher();
     const [isOpen, setIsOpen] = useState(false);
     const [activeLink, setActiveLink] = useState("home");
-    const linksRef = useRef([]);
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
-
-    // const [scrolled, setScrolled] = useState(false);
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //     const isScrolled = window.scrollY > 0;
-    //     if (isScrolled !== scrolled) {
-    //         setScrolled(isScrolled);
-    //     }
-    //     };
-
-    //     document.addEventListener('scroll', handleScroll);
-    //     return () => {
-    //     document.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, [scrolled]);
-
-    
+    const [isTop, setIsTop] = useState(true);
 
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollPos = window.pageYOffset;
-            console.log(currentScrollPos)
+            setIsTop(currentScrollPos <= 10);
             setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
-            console.log(visible)
             setPrevScrollPos(currentScrollPos);
         };
 
@@ -50,7 +31,7 @@ const Navbar = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [prevScrollPos, visible]);
+    }, [prevScrollPos, visible, isTop]);
 
     
 
@@ -94,13 +75,13 @@ const Navbar = () => {
     
 
     return (
-        <div className={`w-full z-20 transition-all duration-300 ease-out fixed py-1 bg-light dark:bg-dark ${visible ? 'top-0' : '-top-20'}`}>
+        <div className={`w-full z-20 transition-all duration-300 ease-out fixed ${isTop ? "pt-3" : "py-1 shadow-md bg-light dark:bg-dark"}  ${visible ? 'top-0' : '-top-20'}`}>
             <div className="">
                 <Container>
                     <div className='flex items-center justify-between  md:gap-0'>
                         <button onClick={toggleOpen} className="md:hidden flex-col justify-center items-center  sm:flex">
                             <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm`}></span>
-                            <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5`} ></span>
+                            <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-1`} ></span>
                             <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm`}></span>
                         </button>
                         <Logo />
