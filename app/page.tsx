@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <main>
         <Container>
-          <Section className="flex flex-col lg:flex-row justify-center items-center  w-full">
+          <Section className="flex flex-col lg:flex-row justify-center items-center mt-4 md:mt-11 w-full">
             <div className="lg:w-1/2">
               <h3 className="m-0 text-center lg:text-start">
                 Hi, my name is <span className="text-primary dark:text-primaryDark italic font-bold">Anas Bensaid</span>
