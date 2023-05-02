@@ -39,7 +39,7 @@ export default function Home() {
                   >
                     Get In Touch
                   </Link>
-                  <Link href="/dummy.pdf" className="text-lg font-medium capitalize underline"  target={"_blank"} download={true}>
+                  <Link href="/anasbensaid.pdf" className="text-lg font-medium capitalize underline"  target={"_blank"} download={false}>
                     Resume
                   </Link>
               </div>
@@ -56,6 +56,7 @@ export default function Home() {
       <Skills />
       <Quote text='"Ever Positive, Never Negative"'/>
       <Experience />
+      <Quote text='"Work Smarter Not Harder"'/>
       <Education />
       <Quote text="Code Is Poetry"/>
       <Projects />
