@@ -12,6 +12,7 @@ import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 import Section from './components/Section'
+import Quote from './components/Quote'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -49,10 +50,14 @@ export default function Home() {
           </Section>
         </Container>
       </main>
+      <Quote text="Always Say Less Than Nessesary"/>
       <About />
+      <Quote text="Do What You Love, Love What You Do"/>
       <Skills />
+      <Quote text='"Ever Positive, Never Negative"'/>
       <Experience />
       <Education />
+      <Quote text="Code Is Poetry"/>
       <Projects />
       <Contact />
       <Footer />

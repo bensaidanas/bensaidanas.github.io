@@ -8,7 +8,6 @@ const About = () => {
     return (
         <Container>
             <section id="about" className="w-full min-h-screen py-1">
-                <AnimatedText text="Passion Fuels Purpose!" className="" />
                 <div className="flex flex-col items-center md:items-start py-12 md:flex-row md:px-12 gap-4 md:gap-12">
                     <div className="md:w-1/4  w-[75%] order-2 md:order-1 relative">
                         <div className="absolute -bottom-5 -left-5 -z-10 w-[115%] md:w-[100%] h-[100%]  bg-dark dark:bg-light" />
