@@ -5,6 +5,7 @@ import { useCallback, useState, useRef, useEffect } from 'react';
 
 import Container from '../Container'
 import Logo from './Logo'
+import LogoDark from './LogoDark'
 import Links from './Links'
 import { MoonIcon, SunIcon } from '../Icon'
 import useThemeSwitcher from '../hooks/useThemeSwitcher'

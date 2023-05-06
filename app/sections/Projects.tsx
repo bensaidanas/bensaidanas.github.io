@@ -1,7 +1,7 @@
 import Image from "next/image"
 import AnimatedText from "../components/AnimatedText"
 import Container from "../components/Container"
-import { GitHub, NextJs } from "../components/Logos"
+import { DotNet, GitHub, JavaScript, NextJs, Python } from "../components/Logos"
 import projectImage from "../../public/RecipeHub Mockup.png"
 import secondImage from "../../public/personal-portfolio.png"
 import thirdImage from "../../public/white-mode.png"
@@ -70,7 +70,7 @@ const Projects = () => {
                             <GitHub className="!w-5 !h-5 md:w-7 md:h-7 fill-black dark:fill-white" />
                         </a>
                     </div>
-                    <div className="absolute min-h-full lg:min-h-fitlg:min-h-fit bg-black dark:hidden rounded-lg left-0 opacity-10 lg:opacity-70 max-w-full lg:max-w-[60%] max-h-full lg:top-[7%] overflow-hidden">
+                    <div className="absolute min-h-full lg:min-h-fit bg-black dark:hidden rounded-lg left-0 opacity-10 lg:opacity-70 max-w-full lg:max-w-[60%] max-h-full lg:top-[7%] overflow-hidden">
                         <Image src={secondImage} alt={"Anas Bensaid's Portoflio"} />
                     </div>
                     <div className="absolute min-h-full lg:min-h-fit bg-white hidden dark:block rounded-lg left-0 opacity-10 lg:opacity-70 max-w-full lg:max-w-[60%] max-h-full lg:top-[7%] overflow-hidden">
@@ -85,108 +85,67 @@ const Projects = () => {
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
                     <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
                         <div className="flex justify-between items-center">
-                            <NextJs className="flex justify-start !w-9 max-w-9 max-h-9 dark:fill-white fill-black" />
-                            <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
+                            <Python className="w-9 h-9" />
+                            <Link href="https://github.com/bensaidanas/remove-bg" target="_blank">
+                                <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
+                            </Link>
                         </div>
                         <h2 className="text-xl font-bold">
-                            Iime To Have More Fun
+                            The Background Removal and Image Resizing
                         </h2>
-                        <p className="dark:text-white/70 text-black/70">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quis nemo natus atque quisquam beatae voluptate, officiis ipsam velit commodi ratione illo quae debitis iste culpa, doloremque harum. Quas, et?
+                        <p className="dark:text-white/70 text-black/70 min-h-[192px]">
+                            The Background Removal and Image Resizing Program is a powerful Python application 
+                            designed to simplify the process of removing backgrounds from pictures and resizing 
+                            them with ease. It empowers users to enhance their images by seamlessly isolating the 
+                            subject and adjusting its dimensions according to their requirements.
                         </p>
                         <div className="flex gap-2 dark:text-white/50 text-black/50 text-sm">
-                            <p>Next.js 13</p>
-                            <p>React 6</p>
-                            <p>TailwindCSS</p>
+                            <p>Python</p>
                         </div>
                     </div>
                     <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
                         <div className="flex justify-between items-center">
-                            <NextJs className="flex justify-start !w-9 max-w-9 max-h-9 dark:fill-white fill-black" />
-                            <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
+                            <JavaScript className="w-9 max-w-9 max-h-9" />
+                            <Link href="https://github.com/bensaidanas/Delivery-App" target="_blank">
+                                <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
+                            </Link>
                         </div>
                         <h2 className="text-xl font-bold">
-                            Iime To Have More Fun
+                            QuickDelivery - Efficient Delivery Web Page
                         </h2>
-                        <p className="dark:text-white/70 text-black/70">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quis nemo natus atque quisquam beatae voluptate, officiis ipsam velit commodi ratione illo quae debitis iste culpa, doloremque harum. Quas, et?
+                        <p className="dark:text-white/70 text-black/70 min-h-[192px]">
+                            QuickDelivery is a dynamic and user-friendly web application built using JavaScript and Sass, 
+                            designed to streamline the delivery process and enhance the overall user experience. 
                         </p>
                         <div className="flex gap-2 dark:text-white/50 text-black/50 text-sm">
-                            <p>Next.js 13</p>
-                            <p>React 6</p>
-                            <p>TailwindCSS</p>
+                            <p>JavaScript</p>
+                            <p>Sass</p>
+                            <p>HTML</p>
                         </div>
                     </div>
                     <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
                         <div className="flex justify-between items-center">
-                            <NextJs className="flex justify-start !w-9 max-w-9 max-h-9 dark:fill-white fill-black" />
-                            <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
+                            <DotNet className="w-9" />
+                            <Link href="https://github.com/bensaidanas/Delivery-App">
+                                <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
+                            </Link>
                         </div>
                         <h2 className="text-xl font-bold">
-                            Iime To Have More Fun
+                            RentalPro - Streamlined Video Rental Management Application
                         </h2>
-                        <p className="dark:text-white/70 text-black/70">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quis nemo natus atque quisquam beatae voluptate, officiis ipsam velit commodi ratione illo quae debitis iste culpa, doloremque harum. Quas, et?
+                        <p className="dark:text-white/70 text-black/70 min-h-[192px]">
+                            RentalPro is a comprehensive video rental management application developed using ASP.net and C#. 
+                            Designed to simplify the rental process, RentalPro offers a user-friendly interface specifically 
+                            tailored for cashiers, enabling them to efficiently manage and track rental videos in a store 
+                            setting.
                         </p>
                         <div className="flex gap-2 dark:text-white/50 text-black/50 text-sm">
-                            <p>Next.js 13</p>
-                            <p>React 6</p>
-                            <p>TailwindCSS</p>
+                            <p>ASP.net Core 3</p>
+                            <p>SQL Server</p>
+                            <p>Bootstrap 4</p>
                         </div>
                     </div>
-                    <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
-                        <div className="flex justify-between items-center">
-                            <NextJs className="flex justify-start !w-9 max-w-9 max-h-9 dark:fill-white fill-black" />
-                            <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
-                        </div>
-                        <h2 className="text-xl font-bold">
-                            Iime To Have More Fun
-                        </h2>
-                        <p className="dark:text-white/70 text-black/70">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quis nemo natus atque quisquam beatae voluptate, officiis ipsam velit commodi ratione illo quae debitis iste culpa, doloremque harum. Quas, et?
-                        </p>
-                        <div className="flex gap-2 dark:text-white/50 text-black/50 text-sm">
-                            <p>Next.js 13</p>
-                            <p>React 6</p>
-                            <p>TailwindCSS</p>
-                        </div>
-                    </div>
-                    <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
-                        <div className="flex justify-between items-center">
-                            <NextJs className="flex justify-start !w-9 max-w-9 max-h-9 dark:fill-white fill-black" />
-                            <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
-                        </div>
-                        <h2 className="text-xl font-bold">
-                            Iime To Have More Fun
-                        </h2>
-                        <p className="dark:text-white/70 text-black/70">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quis nemo natus atque quisquam beatae voluptate, officiis ipsam velit commodi ratione illo quae debitis iste culpa, doloremque harum. Quas, et?
-                        </p>
-                        <div className="flex gap-2 dark:text-white/50 text-black/50 text-sm">
-                            <p>Next.js 13</p>
-                            <p>React 6</p>
-                            <p>TailwindCSS</p>
-                        </div>
-                    </div>
-                    <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
-                        <div className="flex justify-between items-center">
-                            <NextJs className="flex justify-start !w-9 max-w-9 max-h-9 dark:fill-white fill-black" />
-                            <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
-                        </div>
-                        <h2 className="text-xl font-bold">
-                            Iime To Have More Fun
-                        </h2>
-                        <p className="dark:text-white/70 text-black/70">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quis nemo natus atque quisquam beatae voluptate, officiis ipsam velit commodi ratione illo quae debitis iste culpa, doloremque harum. Quas, et?
-                        </p>
-                        <div className="flex gap-2 dark:text-white/50 text-black/50 text-sm">
-                            <p>Next.js 13</p>
-                            <p>React 6</p>
-                            <p>TailwindCSS</p>
-                        </div>
-                    </div>
-                    
-                    
+                
                 </div>
             </section>
         </Container>

@@ -12,14 +12,14 @@ const font = Courgette({
     preload: false,
 })
 
-const Logo = () => {
+const LogoDark = () => {
     const router = useRouter();
     return (
         <div>
             <MotionLink href="/" 
-                className={`w-16 h-16 border border-solid border-transparent  bg-white  text-black flex items-center justify-center rounded-full text-xl font-bold ${font.className}`}
+                className={`w-16 h-16 border border-solid border-transparent dark:border-light bg-dark  text-light flex items-center justify-center rounded-full text-xl font-bold ${font.className}`}
                 whileHover={{
-                    backgroundColor:["#fff", "rgba(131,58,180,1)","rgba(253,29,29,1)","rgba(252,176,69,1)","rgba(131,58,180,1)", "#fff"],
+                    backgroundColor:["#121212", "rgba(131,58,180,1)","rgba(253,29,29,1)","rgba(252,176,69,1)","rgba(131,58,180,1)", "#121212"],
                     transition:{duration: 1, repeat: Infinity}
                 }}
                 >
@@ -29,4 +29,4 @@ const Logo = () => {
     )
 }
 
-export default Logo
+export default LogoDark

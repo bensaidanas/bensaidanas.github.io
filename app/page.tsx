@@ -50,15 +50,15 @@ export default function Home() {
           </Section>
         </Container>
       </main>
-      <Quote text="Always Say Less Than Nessesary"/>
+      <Quote text='"Always Say Less Than Nessesary"'/>
       <About />
-      <Quote text="Do What You Love, Love What You Do"/>
+      <Quote text='"Do What You Love, Love What You Do"'/>
       <Skills />
       <Quote text='"Ever Positive, Never Negative"'/>
       <Experience />
       <Quote text='"Work Smarter Not Harder"'/>
       <Education />
-      <Quote text="Code Is Poetry"/>
+      <Quote text='"Code Is Poetry"'/>
       <Projects />
       <Contact />
       <Footer />

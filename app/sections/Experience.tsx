@@ -25,7 +25,7 @@ const Details: React.FC<DetailsProps> = ({position, company, companyLink, time, 
             <LiIcon reference={ref} />
             <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration: 0.5, type: "spring"}}>
                 <h3 className="capitalize font-bold text-lg md:text-2xl">
-                    {position} &nbsp; <a href={companyLink} className="text-primary capitalize" target="_blank">@ {company}</a>
+                    {position} &nbsp; <a href={companyLink} className="text-primaryDark capitalize" target="_blank">@{company}</a>
                 </h3>
                 <span className="capitalize text-xs font-medium text-dark/75 dark:text-light/75">
                     {time} | {address}
@@ -80,10 +80,10 @@ const Experience = () => {
                             in the future, and to continue to grow and develop as a software engineer."
                         />
                         <Details 
-                            position="Software Engineer"
-                            company="Google"
-                            companyLink="www.google.com"
-                            time="2022-Present"
+                            position="Network Support"
+                            company="SNRT - Rabat"
+                            companyLink="http://snrt.ma"
+                            time="March 2020 - August 2020"
                             address="Mountain View, CA"
                             work="My previous internship at SNRT provided me with hands-on experience in the networking 
                             industry. During my time there, I worked with switches, servers, IP phones, network 
