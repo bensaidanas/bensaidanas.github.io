@@ -85,7 +85,7 @@ const Projects = () => {
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
                     <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
                         <div className="flex justify-between items-center">
-                            <Python className="w-9 h-9" />
+                            <Python className="flex justify-start !w-9 max-w-9 max-h-9" />
                             <Link href="https://github.com/bensaidanas/remove-bg" target="_blank">
                                 <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
                             </Link>
@@ -105,7 +105,7 @@ const Projects = () => {
                     </div>
                     <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
                         <div className="flex justify-between items-center">
-                            <JavaScript className="w-9 max-w-9 max-h-9" />
+                            <JavaScript className="flex justify-start !w-9 max-w-9 max-h-9" />
                             <Link href="https://github.com/bensaidanas/Delivery-App" target="_blank">
                                 <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
                             </Link>
@@ -125,7 +125,7 @@ const Projects = () => {
                     </div>
                     <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
                         <div className="flex justify-between items-center">
-                            <DotNet className="w-9" />
+                            <DotNet className="flex justify-start !w-9 max-w-9 max-h-9" />
                             <Link href="https://github.com/bensaidanas/Delivery-App">
                                 <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
                             </Link>
@@ -144,8 +144,8 @@ const Projects = () => {
                             <p>SQL Server</p>
                             <p>Bootstrap 4</p>
                         </div>
-                    </div>
-                
+                    </div>    
+                    
                 </div>
             </section>
         </Container>
