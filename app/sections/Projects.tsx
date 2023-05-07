@@ -3,8 +3,8 @@ import AnimatedText from "../components/AnimatedText"
 import Container from "../components/Container"
 import { DotNet, GitHub, JavaScript, NextJs, Python } from "../components/Logos"
 import projectImage from "../../public/RecipeHub Mockup.png"
-import secondImage from "../../public/personal-portfolio.png"
-import thirdImage from "../../public/white-mode.png"
+import secondImage from "../../public/portfolio-dark.png"
+import thirdImage from "../../public/portfolio-light.png"
 import Link from "next/link"
 
 const Projects = () => {
@@ -18,7 +18,7 @@ const Projects = () => {
                             <h3 className="m-0  text-xs md:text-sm text-primary dark:text-primaryDark">Featured Project</h3>
                             <h2 className="m-0 text-xl md:text-2xl font-bold">RecipesHub</h2>
                         </div>
-                        <div className="w-full lg:max-w-[40vw] lg:p-3 rounded-lg md:dark:bg-black lg:bg-slate-500">
+                        <div className="w-full lg:max-w-[40vw] lg:p-3 rounded-lg md:dark:bg-black lg:bg-white">
                             <p className="text-xs md:text-lg">
                                 RecipesHub is a user-friendly mobile app that provides access to a variety of recipes 
                                 from different categories and cuisines. It includes detailed information about each 
@@ -34,9 +34,9 @@ const Projects = () => {
                             <p>MongoDB</p>
                             <p>RestAPI</p>
                         </div>
-                        <a href="google.com" target="_blank">
+                        <Link href="https://github.com/bensaidanas/recipeshub" target="_blank">
                             <GitHub className="!w-5 !h-5 md:w-7 md:h-7 fill-black dark:fill-white" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="absolute rounded-lg   right-0 opacity-10 lg:opacity-70 max-w-full lg:max-w-[60%] max-h-full top-0 overflow-hidden">
                         <Image src={projectImage} alt={"RecipesHub"}  />
@@ -46,12 +46,12 @@ const Projects = () => {
                 <div className="my-12" />
 
                 <div className="flex lg:h-[60vh]  w-full items-center justify-center relative">
-                <div className="flex p-2 lg:p-0 flex-col text-center lg:text-end w-full items-center lg:items-end justify-center z-10 gap-1 lg:gap-4">
+                    <div className="flex p-2 lg:p-0 flex-col text-center lg:text-end w-full items-center lg:items-end justify-center z-10 gap-1 lg:gap-4">
                         <div>
                             <h3 className="m-0 text-xs md:text-sm text-primary dark:text-primaryDark">Featured Project</h3>
                             <h2 className="m-0 text-xl md:text-2xl font-bold">My Personal Porfolio</h2>
                         </div>
-                        <div className="w-full lg:max-w-[40vw] md:p-3 rounded-lg lg:dark:bg-black lg:bg-slate-500">
+                        <div className="w-full lg:max-w-[40vw] md:p-3 rounded-lg lg:dark:bg-black lg:bg-white">
                             <p className="text-xs md:text-lg">
                                 This portfolio showcases my skills and experiences in the field of software development 
                                 and networking technology. The design is simple yet elegant, with easy navigation to 
@@ -66,9 +66,9 @@ const Projects = () => {
                             <p>Framer Motion</p>
                             <p>Vercel</p>
                         </div>
-                        <a href="google.com" target="_blank">
+                        <Link href="https://github.com/bensaidanas/bensaidanas.github.io" target="_blank">
                             <GitHub className="!w-5 !h-5 md:w-7 md:h-7 fill-black dark:fill-white" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="absolute min-h-full lg:min-h-fit bg-black dark:hidden rounded-lg left-0 opacity-10 lg:opacity-70 max-w-full lg:max-w-[60%] max-h-full lg:top-[7%] overflow-hidden">
                         <Image src={secondImage} alt={"Anas Bensaid's Portoflio"} />
@@ -126,7 +126,7 @@ const Projects = () => {
                     <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
                         <div className="flex justify-between items-center">
                             <DotNet className="flex justify-start !w-9 max-w-9 max-h-9" />
-                            <Link href="https://github.com/bensaidanas/Delivery-App">
+                            <Link href="https://github.com/bensaidanas/movie-rental" target="_blank">
                                 <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
                             </Link>
                         </div>

@@ -13,7 +13,7 @@ const About = () => {
                 <div className="flex flex-col items-center lg:items-start py-12 lg:flex-row lg:px-12 gap-4 md:gap-12">
                     <div className="lg:w-1/4 md:w-2/4  w-[75%] order-2 lg:order-1 relative">
                         <div className="absolute -bottom-5 -left-5 -z-10 w-[100%] h-[100%]  bg-dark dark:bg-light" />
-                        <Image src={profilePic} alt="Irelia" className="w-auto max-h-[85vh]" /> 
+                        <Image src={profilePic} alt="Mr. Anas Bensaid" className="w-auto max-h-[85vh]" /> 
                     </div>
                     
                     <div className="lg:w-2/4  order-1 lg:order-2">
@@ -35,10 +35,10 @@ const About = () => {
                     <div className="lg:w-1/4 self-center my-8 lg:my-0 order-3 w-[75%] relative">
                         <div className="flex lg:flex-col justify-center lg:justify-end items-center">
                             <Link href={"https://www.linkedin.com/in/anassbensaid/"} target="_blanck">
-                                <LinkedIn className="dark:fill-white fill-black m-4 w-[60px]" />
+                                <LinkedIn className="dark:fill-white fill-black m-4 w-[60px] max-w-[60px]" />
                             </Link>
                             <Link href={"https://github.com/bensaidanas"} target="_blanck">
-                                <GitHub className="dark:fill-white fill-black m-4 w-[60px]" />
+                                <GitHub className="dark:fill-white  fill-black my-4 min-w-[60px] max-w-[60px]" />
                             </Link>
                         </div>
                     </div>

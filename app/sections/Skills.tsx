@@ -90,7 +90,7 @@ const Skills = () => {
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <ReactLogo />
-                                <p>React 6</p>
+                                <p>React 18</p>
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <Ionic />
@@ -100,7 +100,7 @@ const Skills = () => {
                     </div>
                     <div className="flex flex-col items-center justify-center gap-3 relative">
                         <h3 className="md:text-[9rem] text-center md:absolute top-0 left-0 md:opacity-10 md:-z-1">
-                            Technologies 
+                            Tools 
                         </h3>
                         <div className="grid grid-cols-3 text-xs md:grid-cols-6 lg:grid-cols-8 gap-4 md:gap-5 lg:gap-8">
                             <div className="flex flex-col gap-1 min-w-[70px] min-h-[70px] md:min-w-[80px] md:min-h-[80px] items-center justify-center">

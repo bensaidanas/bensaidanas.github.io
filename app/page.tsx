@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import homePic from '../public/owl.png'
+import homePic from '../public/hero.png'
 import { Inter } from 'next/font/google'
 import Container from './components/Container'
 import Link from 'next/link'
@@ -50,15 +50,15 @@ export default function Home() {
           </Section>
         </Container>
       </main>
-      <Quote text='"Always Say Less Than Nessesary"'/>
+      <Quote text='"The power of imagination makes us infinite."'/>
       <About />
-      <Quote text='"Do What You Love, Love What You Do"'/>
+      <Quote text='"Do What You Love, Love What You Do."'/>
       <Skills />
-      <Quote text='"Ever Positive, Never Negative"'/>
+      <Quote text='"The harder you work, the luckier you get."'/>
       <Experience />
-      <Quote text='"Work Smarter Not Harder"'/>
+      <Quote text='"Coding allows us to create art that can be interacted with."'/>
       <Education />
-      <Quote text='"Code Is Poetry"'/>
+      <Quote text='"Code Is Poetry."'/>
       <Projects />
       <Contact />
       <Footer />
