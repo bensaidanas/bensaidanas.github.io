@@ -142,7 +142,7 @@ const Projects = () => {
                         <div className="flex gap-2 dark:text-white/50 text-black/50 text-sm">
                             <p>ASP.net Core 3</p>
                             <p>SQL Server</p>
-                            <p>Bootstrap 4</p>
+                            <p>Bootstrap</p>
                         </div>
                     </div>    
                     
