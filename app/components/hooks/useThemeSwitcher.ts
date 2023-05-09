@@ -8,7 +8,7 @@ const useThemeSwitcher = () => {
     const [mode, setMode] = useState("");
 
     useEffect(() => {
-        const mediaQuery = window.matchMedia(preferDarkQuery);
+        const mediaQuery = window.matchMedia(preferDarkQuery); // Anas Bensaid 
         const userPref = window.localStorage.getItem("theme");
 
         const handleChange = () => {

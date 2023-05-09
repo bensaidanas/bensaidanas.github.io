@@ -80,11 +80,11 @@ const Experience = () => {
                             in the future, and to continue to grow and develop as a software engineer."
                         />
                         <Details 
-                            position="Network Support"
+                            position="Intern - Network Support"
                             company="SNRT - Rabat"
                             companyLink="http://snrt.ma"
                             time="March 2020 - August 2020"
-                            address="Mountain View, CA"
+                            address="Hassan, Rabat Morocco"
                             work="My previous internship at SNRT provided me with hands-on experience in the networking 
                             industry. During my time there, I worked with switches, servers, IP phones, network 
                             printers, and learned how to diagnose and repair various network-related issues. I also 

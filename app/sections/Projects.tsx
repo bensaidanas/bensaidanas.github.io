@@ -39,7 +39,7 @@ const Projects = () => {
                         </Link>
                     </div>
                     <div className="absolute rounded-lg   right-0 opacity-10 lg:opacity-70 max-w-full lg:max-w-[60%] max-h-full top-0 overflow-hidden">
-                        <Image src={projectImage} alt={"RecipesHub"}  />
+                        <Image priority src={projectImage} alt={"RecipesHub"}  />
                     </div>
                 </div>
 
@@ -49,7 +49,7 @@ const Projects = () => {
                     <div className="flex p-2 lg:p-0 flex-col text-center lg:text-end w-full items-center lg:items-end justify-center z-10 gap-1 lg:gap-4">
                         <div>
                             <h3 className="m-0 text-xs md:text-sm text-primary dark:text-primaryDark">Featured Project</h3>
-                            <h2 className="m-0 text-xl md:text-2xl font-bold">My Personal Porfolio</h2>
+                            <h2 className="m-0 text-xl md:text-2xl font-bold">My Personal Portfolio</h2>
                         </div>
                         <div className="w-full lg:max-w-[40vw] md:p-3 rounded-lg lg:dark:bg-black lg:bg-white">
                             <p className="text-xs md:text-lg">
@@ -71,10 +71,10 @@ const Projects = () => {
                         </Link>
                     </div>
                     <div className="absolute min-h-full lg:min-h-fit bg-black dark:hidden rounded-lg left-0 opacity-10 lg:opacity-70 max-w-full lg:max-w-[60%] max-h-full lg:top-[7%] overflow-hidden">
-                        <Image src={secondImage} alt={"Anas Bensaid's Portoflio"} />
+                        <Image priority src={secondImage} alt={"Anas Bensaid's Portoflio"} />
                     </div>
                     <div className="absolute min-h-full lg:min-h-fit bg-white hidden dark:block rounded-lg left-0 opacity-10 lg:opacity-70 max-w-full lg:max-w-[60%] max-h-full lg:top-[7%] overflow-hidden">
-                        <Image src={thirdImage} alt={"Anas Bensaid's Portoflio"} />
+                        <Image priority src={thirdImage} alt={"Anas Bensaid's Portoflio"} />
                     </div>
                 </div>
             </section>
@@ -118,7 +118,7 @@ const Projects = () => {
                             designed to streamline the delivery process and enhance the overall user experience. 
                         </p>
                         <div className="flex gap-2 dark:text-white/50 text-black/50 text-sm">
-                            <p>JavaScript</p>
+                            <p>JavaScript ES6+</p>
                             <p>Sass</p>
                             <p>HTML</p>
                         </div>
@@ -140,9 +140,9 @@ const Projects = () => {
                             setting.
                         </p>
                         <div className="flex gap-2 dark:text-white/50 text-black/50 text-sm">
-                            <p>ASP.net Core 3</p>
+                            <p>ASP.net Core 3+</p>
                             <p>SQL Server</p>
-                            <p>Bootstrap</p>
+                            <p>Bootstrap 5+</p>
                         </div>
                     </div>    
                     

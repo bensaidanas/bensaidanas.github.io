@@ -22,7 +22,7 @@ const Skills = () => {
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <JavaScript />
-                                <p>JavaScript</p>
+                                <p>JavaScript ES6+</p>
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <TypeScript />
@@ -65,7 +65,7 @@ const Skills = () => {
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <DotNet />
-                                <p>.Net Core</p>
+                                <p>.Net Core 3+</p>
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <NodeJs />
@@ -73,11 +73,11 @@ const Skills = () => {
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <Spring />
-                                <p>Spring</p>
+                                <p>Spring 3+</p>
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <Bootstrap />
-                                <p>Bootstrap 5</p>
+                                <p>Bootstrap 4+</p>
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <TailWindCSS />
@@ -86,7 +86,7 @@ const Skills = () => {
                             
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <Angular />
-                                <p>Angular 13</p>
+                                <p>Angular 12+</p>
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <ReactLogo />

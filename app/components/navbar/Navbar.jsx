@@ -50,7 +50,7 @@ const Navbar = () => {
                 setActiveLink('');  
             } else if (window.scrollY >= aboutSection.offsetTop && window.scrollY < skillsSection.offsetTop) {
                 setActiveLink('about');
-                console.log("I'm about")
+                console.log("I'm Anas Bensaid")
             } else if (window.scrollY >= skillsSection.offsetTop && window.scrollY < experienceSection.offsetTop) {
                 setActiveLink('skills');
             } else if (window.scrollY >= experienceSection.offsetTop && window.scrollY < educationSection.offsetTop) {
