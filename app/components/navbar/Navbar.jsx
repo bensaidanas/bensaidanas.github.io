@@ -88,7 +88,12 @@ const Navbar = () => {
                         <Logo />
                         {isOpen && (
                             <div className="w-full min-h-screen items-center z-50 justify-center bg-light dark:bg-dark absolute top-0 left-0 flex flex-col">
-                                <GrClose style={{color: "white"}} onClick={toggleOpen} className="absolute top-10 right-10 cursor-pointer" />
+                                {/* <GrClose style={{color: "white"}} onClick={toggleOpen} className="absolute top-10 right-10 cursor-pointer" /> */}
+                                <button onClick={toggleOpen} className="flex-col absolute top-10 right-10 cursor-pointer justify-center items-center">
+                                    <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm rotate-45 translate-y-1`}></span>
+                                    <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-1 opacity-0`} ></span>
+                                    <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm -rotate-45 -translate-y-1`}></span>
+                                </button>
                                 <Link onClick={toggleOpen} href="/" className={`${ activeLink === '' ? '' : '' } text-lg relative group`}>
                                     Home
                                     <span className={`h-[1px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${activeLink === '' ? "w-full" : "w-0"}`}>&nbsp;</span>
