@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../components/Container'
 import AnimatedText from '../components/AnimatedText'
-import { Anaconda, AndroidStudio, Angular, Bootstrap, CSS, CSharp, Canva, Docker, DotNet, Figma, GPT, Git, GitHub, HTML, Ionic, Java, JavaScript, MongoDB, MySQL, NextJs, NodeJs, Python, ReactLogo, RedHat, SQLServer, Sass, Slack, Spring, TailWindCSS, TypeScript, VSCode, VisualStudio } from '../components/Logos'
+import { Anaconda, Android, AndroidStudio, Angular, Bootstrap, CSS, CSharp, Canva, Dart, Docker, DotNet, Figma, FireBase, Flutter, GPT, Git, GitHub, HTML, Ionic, Java, JavaScript, MongoDB, MySQL, NextJs, NodeJs, Python, ReactLogo, RedHat, SQLServer, Sass, Slack, Spring, TailWindCSS, TypeScript, VSCode, VisualStudio } from '../components/Logos'
 
 const Skills = () => {
     return (
@@ -40,6 +40,10 @@ const Skills = () => {
                                 <CSharp />
                                 <p>C#</p>
                             </div>
+                            <div className="flex flex-col gap-1 items-center justify-between">
+                                <Dart />
+                                <p>Dart</p>
+                            </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <MySQL />
                                 <p>MySQL</p>
@@ -76,6 +80,14 @@ const Skills = () => {
                                 <p>Spring 3+</p>
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
+                                <Android />
+                                <p>Android</p>
+                            </div>
+                            <div className="flex flex-col gap-1 items-center justify-center">
+                                <FireBase />
+                                <p>Firebase</p>
+                            </div>
+                            <div className="flex flex-col gap-1 items-center justify-center">
                                 <Bootstrap />
                                 <p>Bootstrap 4+</p>
                             </div>
@@ -91,6 +103,10 @@ const Skills = () => {
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <ReactLogo />
                                 <p>React 18</p>
+                            </div>
+                            <div className="flex flex-col gap-1 items-center justify-between">
+                                <Flutter className='w-full' />
+                                <p>Flutter</p>
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <Ionic />

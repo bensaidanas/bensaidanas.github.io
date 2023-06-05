@@ -26,10 +26,10 @@ const Details: React.FC<DetailsProps> = ({type, time, place, info, details}) => 
                 <span className="capitalize text-xs font-medium text-dark/75 dark:text-light/75">
                     {time} | {place}
                 </span>
-                <p className='font-medium text-sm md:text-lg w-full'>
+                <p className='font-medium text-sm text-justify md:text-lg w-full'>
                     {info}
                 </p>
-                <p className='font-medium pt-4 text-sm md:text-lg w-full'>
+                <p className='font-medium pt-4 text-justify text-sm md:text-lg w-full'>
                     {details}
                 </p>
             </motion.div>
