@@ -1,7 +1,7 @@
 import Image from "next/image"
 import AnimatedText from "../components/AnimatedText"
 import Container from "../components/Container"
-import { DotNet, GitHub, JavaScript, NextJs, Python } from "../components/Logos"
+import { Android, DotNet, GitHub, JavaScript, NextJs, Python } from "../components/Logos"
 import projectImage from "../../public/RecipeHub Mockup.png"
 import secondImage from "../../public/portfolio-dark.png"
 import thirdImage from "../../public/portfolio-light.png"
@@ -85,6 +85,27 @@ const Projects = () => {
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
                     <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
                         <div className="flex justify-between items-center">
+                            <Android className="flex justify-start !w-9 max-w-9 max-h-9" />
+                            <Link href="https://github.com/bensaidanas/wanderwise" target="_blank">
+                                <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
+                            </Link>
+                        </div>
+                        <h2 className="text-xl font-bold min-h-[56px]">
+                            WonderWise: Travel Explorer App
+                        </h2>
+                        <p className="dark:text-white/70 text-justify text-black/70 min-h-[192px]">
+                            Travel Explorer App is a Java Android-based mobile application designed to provide users with 
+                            a comprehensive guide to explore and discover various countries. With extensive information on 
+                            hotels, restaurants, and places of interest, this app is a reliable companion for travelers seeking memorable adventures.
+                        </p>
+                        <div className="flex gap-2 dark:text-white/50 text-black/50 text-sm">
+                            <p>Java</p>
+                            <p>Android</p>
+                            <p>FireBase</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
+                        <div className="flex justify-between items-center">
                             <Python className="flex justify-start !w-9 max-w-9 max-h-9" />
                             <Link href="https://github.com/bensaidanas/remove-bg" target="_blank">
                                 <GitHub className="!w-7 max-w-7 max-h-7 dark:fill-white fill-black" />
@@ -93,7 +114,7 @@ const Projects = () => {
                         <h2 className="text-xl font-bold">
                             The Background Removal and Image Resizing
                         </h2>
-                        <p className="dark:text-white/70 text-black/70 min-h-[192px]">
+                        <p className="dark:text-white/70 text-justify text-black/70 min-h-[192px]">
                             The Background Removal and Image Resizing Program is a powerful Python application 
                             designed to simplify the process of removing backgrounds from pictures and resizing 
                             them with ease. It empowers users to enhance their images by seamlessly isolating the 
@@ -103,6 +124,7 @@ const Projects = () => {
                             <p>Python</p>
                         </div>
                     </div>
+
                     <div className="flex flex-col min-h-full p-4 gap-3 dark:bg-black bg-white">
                         <div className="flex justify-between items-center">
                             <JavaScript className="flex justify-start !w-9 max-w-9 max-h-9" />
@@ -113,7 +135,7 @@ const Projects = () => {
                         <h2 className="text-xl font-bold">
                             QuickDelivery - Efficient Delivery Web Page
                         </h2>
-                        <p className="dark:text-white/70 text-black/70 min-h-[192px]">
+                        <p className="dark:text-white/70 text-justify text-black/70 min-h-[192px]">
                             QuickDelivery is a dynamic and user-friendly web application built using JavaScript and Sass, 
                             designed to streamline the delivery process and enhance the overall user experience. 
                         </p>
@@ -133,7 +155,7 @@ const Projects = () => {
                         <h2 className="text-xl font-bold">
                             RentalPro - Streamlined Video Rental Management Application
                         </h2>
-                        <p className="dark:text-white/70 text-black/70 min-h-[192px]">
+                        <p className="dark:text-white/70 text-justify text-black/70 min-h-[192px]">
                             RentalPro is a comprehensive video rental management application developed using ASP.net and C#. 
                             Designed to simplify the rental process, RentalPro offers a user-friendly interface specifically 
                             tailored for cashiers, enabling them to efficiently manage and track rental videos in a store 
