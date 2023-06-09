@@ -40,7 +40,7 @@ export default function Home() {
                     Get In Touch
                   </Link>
                   <Link href="/anasbensaid.pdf" className="text-lg font-medium capitalize underline"  target={"_blank"} download={false}>
-                    Resume
+                    My CV
                   </Link>
               </div>
             </div>
