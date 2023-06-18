@@ -3,9 +3,11 @@ import AnimatedText from "../components/AnimatedText"
 import Container from "../components/Container"
 import { Android, DotNet, GitHub, JavaScript, NextJs, Python } from "../components/Logos"
 import projectImage from "../../public/RecipeHub Mockup.png"
+import anasGallery from "../../public/anas-gallery.png"
 import secondImage from "../../public/portfolio-dark.png"
 import thirdImage from "../../public/portfolio-light.png"
 import Link from "next/link"
+import {FiExternalLink} from "react-icons/fi";
 
 const Projects = () => {
     return (
@@ -61,10 +63,10 @@ const Projects = () => {
                         </div>
                         <div className="flex flex-wrap items-center justify-center text-xs md:text-[1rem] gap-2 md:gap-3 opacity-70">
                             <p>Next.js 13</p>
+                            <p>React 18</p>
                             <p>TypeScript</p>
                             <p>TailWind CSS</p>
                             <p>Framer Motion</p>
-                            <p>Vercel</p>
                         </div>
                         <Link href="https://github.com/bensaidanas/bensaidanas.github.io" target="_blank">
                             <GitHub className="!w-5 !h-5 md:w-7 md:h-7 fill-black dark:fill-white" />
@@ -75,6 +77,41 @@ const Projects = () => {
                     </div>
                     <div className="absolute min-h-full lg:min-h-fit bg-white hidden dark:block rounded-lg left-0 opacity-10 lg:opacity-70 max-w-full lg:max-w-[60%] max-h-full lg:top-[7%] overflow-hidden">
                         <Image priority src={thirdImage} alt={"Anas Bensaid's Portoflio"} />
+                    </div>
+                </div>
+
+                <div className="my-12" />
+
+                <div className="flex lg:h-[60vh]  w-full items-center justify-center relative">
+                    <div className="flex p-2 lg:p-0 flex-col text-center lg:text-start w-full items-center lg:items-start justify-center z-10 gap-1 lg:gap-4">                    
+                        <div>
+                            <h3 className="m-0  text-xs md:text-sm text-primary dark:text-primaryDark">Featured Project</h3>
+                            <h2 className="m-0 text-xl md:text-2xl font-bold">Anas Gallery</h2>
+                        </div>
+                        <div className="w-full lg:max-w-[40vw]  lg:p-3 lg:border-[1px] lg:border-black rounded-lg md:dark:bg-black lg:bg-white">
+                            <p className="text-xs md:text-lg">
+                                A visually stunning personal gallery for my AI art collection using Astro.js. This website showcases a captivating grid view, inviting visitors to explore and appreciate each unique artwork. With seamless navigation, smooth animations, and a clean design, the gallery offers an engaging and immersive experience.
+                            </p>
+                        </div>
+                        <div className="flex flex-wrap text-xs md:text-[1rem] items-center justify-center gap-2 md:gap-3 opacity-70">
+                            <p>Astro</p>
+                            <p>React 18</p>
+                            <p>TypeScript</p>
+                            <p>TailwindCSS</p>
+                            <p>Framer Motion</p>
+                            <p>SVG</p>
+                        </div>
+                        <div className="flex items-center gap-5">
+                            <Link href="https://github.com/bensaidanas/anas-art-collection" target="_blank">
+                                <GitHub className="!w-5 !h-5 md:w-7 md:h-7 fill-black dark:fill-white" />
+                            </Link>
+                            <Link href="https://anas-art.vercel.app" target="_blank">
+                                <FiExternalLink size={18} />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="absolute min-h-full lg:min-h-fit border-[1px] border-black bg-white  rounded-lg right-0 opacity-10 lg:opacity-80  max-w-full lg:max-w-[60%] max-h-full lg:top-[7%] overflow-hidden">
+                        <Image priority src={anasGallery} alt={"Anas Gallery"}  />
                     </div>
                 </div>
             </section>
