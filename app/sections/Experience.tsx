@@ -61,6 +61,15 @@ const Experience = () => {
                         className="absolute left-[20px]  md:left-[30px] lg:left-9 top-1 w-[2px] lg:w-[4px] h-full bg-dark dark:bg-light origin-top" />
                     <ul className="w-full flex flex-col items-start justify-between md:ml-4 ml-2">
                         <Details 
+                            position="Intern - Fullstack Engineer"
+                            company="IntellCap"
+                            companyLink="www.intellcap.org"
+                            time="June 2023 - August 2023"
+                            address="Agdal, Rabat Morocco"
+                            work="Conçu une plateforme de collaboration internationale pour IntellCap, intégrant de manière transparente les fonctionnalités de Jira, Trello et Slack."
+                            details="Implémenté les fonctionnalités de connexion, d'inscription et d'administration en sécurisant les points d'accès du backend et du frontend."
+                        />
+                        <Details 
                             position="Intern - Software Engineer"
                             company="INGECYS TELECOME"
                             companyLink="www.ingecystelecom.com"
