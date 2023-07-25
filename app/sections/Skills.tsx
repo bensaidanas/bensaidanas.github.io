@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../components/Container'
 import AnimatedText from '../components/AnimatedText'
-import { Anaconda, Android, AndroidStudio, Angular, Bootstrap, CSS, CSharp, Canva, Dart, Docker, DotNet, Figma, FireBase, Flutter, GPT, Git, GitHub, HTML, Ionic, Java, JavaScript, MongoDB, MySQL, NextJs, NodeJs, Python, ReactLogo, RedHat, SQLServer, Sass, Slack, Spring, TailWindCSS, TypeScript, VSCode, VisualStudio } from '../components/Logos'
+import { Anaconda, Android, AndroidStudio, Angular, Astro, Bootstrap, CSS, CSharp, Canva, Dart, Docker, DotNet, Figma, FireBase, Flutter, GPT, Git, GitHub, HTML, Ionic, JWT, Java, JavaScript, MongoDB, MySQL, NextJs, NodeJs, PrimeNG, Prisma, Python, ReactLogo, RedHat, SQLServer, Sass, Slack, Spring, SpringBoot, TailWindCSS, TypeScript, VSCode, VisualStudio } from '../components/Logos'
 
 const Skills = () => {
     return (
@@ -27,6 +27,10 @@ const Skills = () => {
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <TypeScript />
                                 <p>TypeScript</p>
+                            </div>
+                            <div className="flex flex-col gap-1 items-center justify-center ">
+                                <Sass />
+                                <p>Sass</p>
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <Java />
@@ -76,8 +80,8 @@ const Skills = () => {
                                 <p>Node JS</p>
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
-                                <Spring />
-                                <p>Spring 3+</p>
+                                <SpringBoot />
+                                <p>Spring Boot 3</p>
                             </div>
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <Android />
@@ -104,13 +108,29 @@ const Skills = () => {
                                 <ReactLogo />
                                 <p>React 18</p>
                             </div>
-                            <div className="flex flex-col gap-1 items-center justify-between">
+                            {/* <div className="flex flex-col gap-1 items-center justify-between">
                                 <Flutter className='w-full' />
                                 <p>Flutter</p>
-                            </div>
+                            </div> */}
                             <div className="flex flex-col gap-1 items-center justify-center">
                                 <Ionic />
                                 <p>Ionic 6</p>
+                            </div>
+                            <div className="flex flex-col gap-1 items-center justify-center">
+                                <Astro className="dark:fill-white fill-black" />
+                                <p>Astro</p>
+                            </div>
+                            <div className="flex flex-col gap-1 items-center justify-center">
+                                <PrimeNG />
+                                <p>Primeng</p>
+                            </div>
+                            <div className="flex flex-col gap-1 items-center justify-center">
+                                <Prisma className="dark:fill-white fill-black" />
+                                <p>Prisma</p>
+                            </div>
+                            <div className="flex flex-col gap-1 items-center justify-center">
+                                <JWT />
+                                <p>JWT</p>
                             </div>
                         </div>
                     </div>
