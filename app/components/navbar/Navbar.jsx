@@ -102,7 +102,7 @@ const Navbar = () => {
                                     About
                                     <span className={`h-[1px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${activeLink === 'about' ? "w-full" : "w-0"}`}>&nbsp;</span>
                                 </Link>
-                                <Link onClick={toggleOpen} href="#skills" className={`${ activeLink === 'skills' ? '' : '' } pt-4 text-lg relative group`}>
+                                <Link scroll={false} onClick={toggleOpen} href="#skills" className={`${ activeLink === 'skills' ? '' : '' } pt-4 text-lg relative group`}>
                                     Skills
                                     <span className={`h-[1px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${activeLink === 'skills' ? "w-full" : "w-0"}`}>&nbsp;</span>
                                 </Link>
@@ -131,7 +131,7 @@ const Navbar = () => {
                                 About
                                 <span className={`h-[1px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${activeLink === 'about' ? "w-full" : "w-0"}`}>&nbsp;</span>
                             </Link>
-                            <Link  href="#skills" className={`${ activeLink === 'skills' ? '' : '' } text-lg relative group`}>
+                            <Link scroll={false} href="#skills" className={`${ activeLink === 'skills' ? '' : '' } text-lg relative group`}>
                                 Skills
                                 <span className={`h-[1px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${activeLink === 'skills' ? "w-full" : "w-0"}`}>&nbsp;</span>
                             </Link>
